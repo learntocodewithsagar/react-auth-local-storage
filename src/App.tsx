@@ -28,9 +28,7 @@ function App() {
 
 const PrivateRoute = () => {
   var activeUser = getActiveUser();
-
   if (activeUser == null) return <Navigate to="/login" />;
-
   return <Outlet />;
 };
 

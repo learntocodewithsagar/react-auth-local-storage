@@ -21,13 +21,18 @@ const Home = () => {
       style={{
         color: "white",
         display: "flex",
-        justifyContent: "space-between",
+        justifyContent: "center",
+        alignItems: "center",
+        margin: 50,
+        flexDirection: "column",
       }}
     >
       <div>Welcome {activeUser?.name}</div>
-      <button onClick={handleLogout} style={{ width: 200 }}>
-        Log Out
-      </button>
+      <div>
+        <button onClick={handleLogout} style={{ width: 200 }}>
+          Log Out
+        </button>
+      </div>
     </div>
   );
 };
